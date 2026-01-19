@@ -1,7 +1,7 @@
 
 void main() {
     Scanner scanner = new Scanner(System.in);
-
+    System.out.println("--- Simple Java calculator ---");
     System.out.print("Enter your first number: ");
     int num1 = scanner.nextInt();
 
