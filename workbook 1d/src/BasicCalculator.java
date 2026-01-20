@@ -28,9 +28,4 @@ void main() {
             System.out.println("Invalid operator");
             break;
     }
-
-
-
-
-
 }
