@@ -27,5 +27,6 @@ public class FullNameGenerator {
             System.out.print(", " + suffix);
         }
 
+
         scanner.close();
 }}
