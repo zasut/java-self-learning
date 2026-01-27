@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class FullNameGenerator {
     public static void main() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("--- Full Name Generator");
+        System.out.println("--- Full Name Generator ---");
 
         System.out.println("Please type your first name: ");
         String fName = scanner.nextLine().trim();
