@@ -8,32 +8,32 @@ public class AddressBuilder {
         System.out.println("--- Address Builder ---");
 
         System.out.println("Please provide the following information: ");
-        System.out.println("Full name:");
+        System.out.print("Full name: ");
         String user_name = scanner.nextLine();
 
         StringBuilder BillingInfo = new StringBuilder();
-        System.out.println("Billing Street:");
+        System.out.print("Billing Street: ");
         BillingInfo.append(scanner.nextLine());
-        System.out.println("Billing City:");
-        BillingInfo.append("\n").append(scanner.nextLine());
-        System.out.println("Billing State:");
-        BillingInfo.append("\n").append(scanner.nextLine());
-        System.out.println("Billing Zip:");
-        BillingInfo.append("\n").append(scanner.nextLine());
+        System.out.print("Billing City: ");
+        BillingInfo.append("\n").append(scanner.nextLine().trim());
+        System.out.print("Billing State: ");
+        BillingInfo.append(", ").append(scanner.nextLine().trim());
+        System.out.print("Billing Zip: ");
+        BillingInfo.append(" ").append(scanner.nextLine().trim());
 
         StringBuilder ShippingInfo = new StringBuilder();
-        System.out.println("Shipping Street:");
+        System.out.print("\nShipping Street: ");
         ShippingInfo.append(scanner.nextLine());
-        System.out.println("Shipping City:");
-        ShippingInfo.append("\n").append(scanner.nextLine());
-        System.out.println("Shipping State:");
-        ShippingInfo.append("\n").append(scanner.nextLine());
-        System.out.println("Shipping Zip:");
-        ShippingInfo.append("\n").append(scanner.nextLine());
+        System.out.print("Shipping City: ");
+        ShippingInfo.append("\n").append(scanner.nextLine().trim());
+        System.out.print("Shipping State: ");
+        ShippingInfo.append(", ").append(scanner.nextLine().trim());
+        System.out.print("Shipping Zip: ");
+        ShippingInfo.append(" ").append(scanner.nextLine().trim());
 
-        System.out.println(user_name);
-        System.out.println("Billing Address:\n" + BillingInfo);
-        System.out.println("Shipping Address:\n" + ShippingInfo);
+        System.out.println("\n" + user_name);
+        System.out.println("\nBilling Address:\n" + BillingInfo);
+        System.out.println("\nShipping Address:\n" + ShippingInfo);
 
         scanner.close();
     }
